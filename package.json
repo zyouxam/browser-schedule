@@ -13,6 +13,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "build": "browserify index.js -o dist.js",
     "test": "tape test/*.js",
     "test:browser": "airtap test/cancel-long-running-jobs.js test/convenience-method-test.js test/date-convenience-methods-test.js test/range-test.js test/recurrence-rule-test.js test/schedule-cron-jobs.js test/start-end-test.js",
     "coveralls": "nyc report --reporter=lcov",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "airtap": "^4.0.1",
+    "browserify": "^17.0.0",
     "eslint": "^7.18.0",
     "nyc": "^15.1.0",
     "sinon": "^9.2.4",
