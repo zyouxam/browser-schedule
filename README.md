@@ -1,4 +1,20 @@
-# Node Schedule
+# Browser Schedule
+
+Forked from [Node Schedule](https://github.com/node-schedule/node-schedule)
+
+## Usage
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/zyouxam/browser-schedule@master/dist.js"></script>
+<script>
+  var job = schedule.scheduleJob('0 17 ? * 0,4-6', function(){
+    console.log('Today is recognized by Rebecca Black!');
+  });
+</script>
+```
+
+
+# Node Schedule's README
 
 [![NPM version](http://img.shields.io/npm/v/node-schedule.svg)](https://www.npmjs.com/package/node-schedule)
 [![Downloads](https://img.shields.io/npm/dm/node-schedule.svg)](https://www.npmjs.com/package/node-schedule)
